@@ -40,6 +40,7 @@ namespace JobLessonOOP07v01Part01
         public string Decode(string decode)
         {
             string decodeText = "";
+            string symbols = " !@#$%^&*()!№;%:?<>|/{}[]-_=+";
             for (int i = 0; i < decode.Length; i++)
             {
                 if (decode[i] == 'а' || decode[i] == 'А')
@@ -50,9 +51,9 @@ namespace JobLessonOOP07v01Part01
                 {
                     decodeText += (char)(decode[i] + 25);
                 }
-                else if (decode[i] == ' ' || decode[i] == '!' || decode[i] == '?')
+                else if (symbols.Contains(decode[i]))
                 {
-                    decodeText += (char)(decode[i]);
+                    decodeText += decode[i];
                 }
                 else
                     decodeText += (char)(decode[i] - 1);

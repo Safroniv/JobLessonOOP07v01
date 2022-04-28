@@ -13,8 +13,8 @@ namespace JobLessonOOP07v01Part01
             Console.WriteLine(aCoder.Encode("Привет Мир!@#$^^&><?"));
             Console.WriteLine(aCoder.Decode(aCoder.Encode("АБВгде")));
             Console.WriteLine(aCoder.Decode("Hallo World!"));
-            Console.WriteLine(aCoder.Decode(aCoder.Encode("Hallo World!")));
-            Console.WriteLine(aCoder.Decode("ABCDefgza"));
+            Console.WriteLine(aCoder.Decode(aCoder.Encode("Hallo World! !@$#^&^%*")));
+            Console.WriteLine(aCoder.Decode("ABCDefgza !@$#^&^%*"));
             //Console.WriteLine("====== Введите строку======");
             //Console.WriteLine(aCoder.Encode(Console.ReadLine()));
 
